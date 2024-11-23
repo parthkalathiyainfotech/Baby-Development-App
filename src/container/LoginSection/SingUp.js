@@ -11,12 +11,13 @@ export default function SingUp() {
 
   return (
     <View style={{ width: '100%', height: '100%', backgroundColor: 'white' }}>
-      <StatusBar backgroundColor={'white'} barStyle={'dark-content'} />
+      <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" />
+
       <View style={{ flex: 1 }}>
         <View style={{ width: RWidth(100), height: RHeight(100), flexGrow: 1, position: 'absolute' }}>
           <Image
             source={require('../../assets/Images/BackgroundImage.png')}
-            style={{ width: '100%', height: '100%', resizeMode: 'cover', opacity: 0.6 }}
+            style={{ width: '100%', height: '100%', resizeMode: 'cover', opacity: 0.6 ,marginTop:RHeight(1) }}
           />
         </View>
 
@@ -37,7 +38,7 @@ export default function SingUp() {
               width: '100%',
             }}
           >
-            <View style={{ width: '100%', height: RHeight(6) }}>
+            <View style={{ width: '100%', height: RHeight(6), marginTop: RHeight(5) }}>
               <TouchableOpacity style={{ width: '15%', height: '100%', justifyContent: 'center' }}>
                 <MaterialCommunityIcons name={'keyboard-backspace'} size={25} color={'black'} />
               </TouchableOpacity>
@@ -118,7 +119,7 @@ export default function SingUp() {
             </View>
 
 
-            <View style={{ width: '100%', height: RHeight(3), position: 'absolute', bottom: 15, justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+            <View style={{ width: '100%', height: RHeight(3), justifyContent: 'center', alignItems: 'center', flexDirection: 'row', position: 'absolute', bottom: 0 }}>
               <Text style={{ color: '#6A6A6AB2', fontSize: 14, fontWeight: '500' }}>Already have an account? </Text>
               <TouchableOpacity><Text style={{ color: '#0C4151', fontSize: 14, fontWeight: '600' }}>Login</Text></TouchableOpacity>
             </View>
